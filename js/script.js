@@ -18,13 +18,13 @@ let numbers = ""
 let base = parseInt(document.getElementById('base').value )
 let exponent = parseInt(document.getElementById('exponent').value )
 
-  if ((isNaN(numOne)) || (isNaN(numTwo))) {
-  numbers= "Please enter two Numbers"
+  if ((isNaN(base)) || (isNaN(exponent))) {
+  numbers= "Please enter two positive intergers as a base and an exponent"
 }
     else {
   // Use a for loop to calculate answer of the product of the two intergers 
     for (let counter = 1; counter <= exponent; counter++) { 
-      product*=numOne 
+      product*=base
     }
     numbers = exponent + '^' + base + "=" + product ;
     }
